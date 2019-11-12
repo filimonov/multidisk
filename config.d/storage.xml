@@ -9,28 +9,28 @@
           on top level config instead)
       -->
       <default>
-         <!--
-             You can reserve some amount of free space
-             on any disk (including default) by adding
-             keep_free_space_bytes tag
-         -->
-         <keep_free_space_bytes>1024</keep_free_space_bytes>
+        <!--
+            You can reserve some amount of free space
+            on any disk (including default) by adding
+            keep_free_space_bytes tag
+        -->
+        <keep_free_space_bytes>1024</keep_free_space_bytes>
       </default>
 
       <ebs_gp2_1>
-         <!--
-         disk path must end with a slash,
-         folder should be writable for clickhouse user
-         -->
-         <path>/mnt/ebs_gp2_1/</path>
+        <!--
+            disk path must end with a slash,
+            folder should be writable for clickhouse user
+        -->
+        <path>/mnt/ebs_gp2_1/</path>
       </ebs_gp2_1>
 
       <ebs_gp2_2>
-          <path>/mnt/ebs_gp2_2/</path>
+        <path>/mnt/ebs_gp2_2/</path>
       </ebs_gp2_2>
 
       <ebs_sc1_1>
-          <path>/mnt/ebs_sc1_1/</path>
+        <path>/mnt/ebs_sc1_1/</path>
       </ebs_sc1_1>
     </disks>
   </storage_configuration>
