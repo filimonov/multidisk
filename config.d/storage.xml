@@ -33,5 +33,21 @@
         <path>/mnt/ebs_sc1_1/</path>
       </ebs_sc1_1>
     </disks>
+
+    <policies>
+      <ebs_gp2_1_only> <!-- name for new storage policy -->
+        <volumes>  
+          <ebs_gp2_1_volume> <!-- name of volume -->
+            <!-- 
+                we have only one disk in that volume  
+                and we reference here the name of disk
+                as configured above in <disks> section
+            -->
+            <disk>ebs_gp2_1</disk>
+          </ebs_gp2_1_volume>
+        </volumes>
+      </ebs_gp2_1_only>
+    </policies>
+    
   </storage_configuration>
 </yandex>
