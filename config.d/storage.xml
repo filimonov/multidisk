@@ -47,6 +47,20 @@
           </ebs_gp2_1_volume>
         </volumes>
       </ebs_gp2_1_only>
+
+      <ebs_gp2_jbod>
+        <volumes>
+          <ebs_gp2_jbod_volume>
+              <!--
+                  the order of listing disks inside
+                  volume defines round-robin sequence
+              -->
+              <disk>ebs_gp2_1</disk>
+              <disk>ebs_gp2_2</disk>
+          </ebs_gp2_jbod_volume>
+        </volumes>
+      </ebs_gp2_jbod>
+      
     </policies>
     
   </storage_configuration>
