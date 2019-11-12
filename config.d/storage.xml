@@ -48,9 +48,9 @@
         </volumes>
       </ebs_gp2_1_only>
 
-      <ebs_gp2_jbod>
+      <ebs_gp2_jbod> > <!-- name for new storage policy -->
         <volumes>
-          <ebs_gp2_jbod_volume>
+          <ebs_gp2_jbod_volume> <!-- name of volume -->
               <!--
                   the order of listing disks inside
                   volume defines round-robin sequence
