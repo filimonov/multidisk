@@ -60,7 +60,30 @@
           </ebs_gp2_jbod_volume>
         </volumes>
       </ebs_gp2_jbod>
-      
+
+      <ebs_hot_and_cold>
+        <volumes>
+          <hot_volume>
+            <disk>ebs_gp2_2</disk>
+            <!--
+                 that volume allowed to store only parts which
+                 size is less or equal 200Mb
+            -->
+            <max_data_part_size_bytes>200000000</max_data_part_size_bytes>
+          </hot_volume>
+          <cold_volume>
+            <disk>ebs_sc1_1</disk>
+            <!--
+                that volume will be used only when the first
+                has no space of if part size doesn't satisfy
+                the max_data_part_size_bytes requirement of the
+                first volume, i.e. if part size is greater
+                than 200Mb
+            -->
+          </cold_volume>
+        </volumes>
+      </ebs_hot_and_cold>
+     
     </policies>
     
   </storage_configuration>
