@@ -97,6 +97,22 @@
         <move_factor>0.9999</move_factor>
       </ebs_hot_and_cold_movefactor99>
      
+      <default>
+        <volumes>
+          <hot_volume>
+            <disk>ebs_gp2_1</disk>
+            <disk>ebs_gp2_2</disk>
+            <max_data_part_size_bytes>200000000</max_data_part_size_bytes>
+          </hot_volume>
+          <cold_volume>
+            <disk>ebs_sc1_1</disk>
+          </cold_volume>
+          <default_volume>
+            <disk>default</disk>
+          </default_volume>
+        </volumes>
+      </default>
+
     </policies>
     
   </storage_configuration>
